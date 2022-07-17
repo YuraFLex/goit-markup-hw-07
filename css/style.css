@@ -517,6 +517,10 @@ body {
   color: var(--white-text-color);
 }
 
+.address {
+  margin-top: 20px;
+}
+
 .footer-logo {
   margin-bottom: 9px;
 }
@@ -537,6 +541,10 @@ body {
 }
 
 .footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__city {
   margin-bottom: 9px;
 }
 
