@@ -40,6 +40,16 @@
   position: relative;
 }
 
+.btn-modal-icon {
+  width: 18px;
+  height: 18px;
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .btn-modal:hover & {
+    fill: $acent-color;
+  }
+}
+
 .btn-modal {
   width: 30px;
   height: 30px;
@@ -53,16 +63,6 @@
   align-items: center;
 }
 
-.btn-modal-icon {
-  width: 18px;
-  height: 18px;
-  fill: $primary-text-color;
-}
-
-.btn-modal:hover .btn-modal-icon {
-  fill: $acent-color;
-}
-
 .modal-title {
   text-align: center;
   font-size: 20px;
@@ -71,8 +71,10 @@
   color: $primary-text-color;
 }
 
-.modal-form-item:not(:first-child) {
-  margin-top: 10px;
+.modal-form-item {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 
 .modal-form-label {
@@ -95,6 +97,14 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: $acent-color;
+  }
+
+  &:focus + .modal-icon {
+    fill: $acent-color;
+  }
 }
 
 .modal-icon {
@@ -105,14 +115,6 @@
   height: 18px;
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-input:focus {
-  border-color: $acent-color;
-}
-
-.modal-form-input:focus + .modal-icon {
-  fill: $acent-color;
 }
 
 .comment-input {
@@ -136,12 +138,12 @@
   padding: 10px 55px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-    0px 2px 1px rgb(0 0 0 / 20%);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+      0px 2px 1px rgb(0 0 0 / 20%);
+  }
 }
 
 .checkbox-label {
@@ -161,6 +163,14 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked + .checkbox-icon {
+    border-color: transparent;
+    background-color: $acent-color;
+    background-image: url(../img/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .checkbox-icon {
@@ -174,14 +184,6 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox:checked + .checkbox-icon {
-  border-color: transparent;
-  background-color: $acent-color;
-  background-image: url(../img/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
 }
 
 .checkbox-text {

@@ -2,6 +2,7 @@
 
 .customer {
   display: flex;
+  gap: 30px;
 }
 
 .customer__item {
@@ -11,15 +12,11 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.customer__item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.customer__item:hover,
-.customer__item:focus {
-  border-color: $acent-color;
+  &:hover,
+  &:focus {
+    border-color: $acent-color;
+  }
 }
 
 .customer__link {
