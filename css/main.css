@@ -163,6 +163,39 @@ img {
   height: auto;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.section {
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 50px;
+}
+
+.section--second-color {
+  background-color: #f5f4fa;
+  margin-top: 0;
+}
+
 .no-pb {
   padding-bottom: 0;
 }
@@ -197,38 +230,10 @@ img {
   margin-bottom: 50px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  background-color: #fff;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
-  /* outline: 1px solid rgb(47, 242, 50); */
-}
-
-.section {
+.customer__link {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section--title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-}
-
-.section--second-color {
-  background-color: #f5f4fa;
-  margin-top: 0;
 }
 
 /* -------------------- Модалка -------------------- */
@@ -693,12 +698,6 @@ body {
   margin-bottom: 16px;
 }
 
-.social__list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .social__network {
   width: 44px;
   height: 44px;
@@ -743,9 +742,6 @@ body {
 }
 
 .customer__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   fill: #afb1b8;

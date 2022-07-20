@@ -104,7 +104,7 @@
 .social__list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  @include defaultGap(10px);
 }
 
 .social__network {

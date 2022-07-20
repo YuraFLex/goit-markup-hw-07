@@ -2,7 +2,7 @@
 
 .customer {
   display: flex;
-  gap: 30px;
+  @include defaultGap(30px);
 }
 
 .customer__item {
@@ -20,9 +20,7 @@
 }
 
 .customer__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %centeredFlex;
   width: 100%;
   height: 100%;
   fill: #afb1b8;

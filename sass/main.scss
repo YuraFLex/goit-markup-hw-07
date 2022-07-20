@@ -1,8 +1,10 @@
 @import "./base/normalize";
 @import "./base/castom-reset";
 @import "./utilites/custom-colors";
-@import "./base/castom-utilites";
 @import "./utilites/sections";
+@import "./base/castom-utilites";
+@import "./utilites/mixin";
+@import "./utilites/placeholder";
 @import "./components/modal";
 @import "./components/header";
 @import "./components/logo";
