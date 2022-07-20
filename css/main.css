@@ -534,7 +534,7 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: #2f303a;
+  background: #c4c4c4;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -863,6 +863,7 @@ body {
 .social__list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .social__network {

@@ -541,6 +541,7 @@ body {
 .social__list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .social__network {
